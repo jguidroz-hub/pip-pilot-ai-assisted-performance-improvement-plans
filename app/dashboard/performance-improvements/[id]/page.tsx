@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-interface PerformanceImprovementsDetailItem
+interface PerformanceImprovementsDetailItem {
   id: string;
   title?: string;
   status?: string;
@@ -10,7 +10,7 @@ interface PerformanceImprovementsDetailItem
   [key: string]: any;
 }
 
-export default function PerformanceImprovementsDetailPage
+export default function PerformanceImprovementsDetailPage() {
   const [items, setItems] = useState<PerformanceImprovementsDetailItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [showCreate, setShowCreate] = useState(false);
