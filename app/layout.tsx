@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'PIP Pilot - AI-Assisted Performance Improvement Plans',
-  description: 'Value Proposition: Streamlines and automates the Performance Improvement Plan (PIP) process for managers, providing data-driven insights, customizable templates, and progress tracking to reduce burnout and improve outcomes for underperforming employees.',
+  description: 'Value Proposition: Streamlines and automates the Performance Improvement Plan (PIP) process for mana',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
