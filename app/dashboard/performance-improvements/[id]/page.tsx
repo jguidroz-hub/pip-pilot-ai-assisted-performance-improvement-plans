@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-interface PerformanceImprovements/[id]Item {
+interface PerformanceImprovementsDetailItem
   id: string;
   title?: string;
   status?: string;
@@ -10,8 +10,8 @@ interface PerformanceImprovements/[id]Item {
   [key: string]: any;
 }
 
-export default function PerformanceImprovements/[id]Page() {
-  const [items, setItems] = useState<PerformanceImprovements/[id]Item[]>([]);
+export default function PerformanceImprovementsDetailPage
+  const [items, setItems] = useState<PerformanceImprovementsDetailItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [showCreate, setShowCreate] = useState(false);
   const [newTitle, setNewTitle] = useState('');
@@ -39,7 +39,7 @@ export default function PerformanceImprovements/[id]Page() {
   };
 
   const handleDelete = async (id: string) => {
-    await fetch(`/api/performance-improvements/[id]/${id}`, { method: 'DELETE' });
+    await fetch(`/ApiPerformance-iImprovementsDetail${id}`, { method: 'DELETE' });
     setItems(prev => prev.filter(i => i.id !== id));
   };
 
